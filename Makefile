@@ -14,4 +14,4 @@ rebuild:
 
 .PHONY: run
 run:
-	docker run -it -P --rm -v "$(PWD)":/mnt cs61/f18 bash -l
+	docker run -it -P --rm -v "$(PWD)":/mnt cs61/f18
