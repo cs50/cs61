@@ -4,9 +4,11 @@ ARG DEBIAN_FRONTEND=noninteractive
 RUN apt-get update && \
     apt-get install -y \
         bochs \
+        emacs \
         g++ \
         kcachegrind \
         linux-tools-generic \
-        qemu
+        qemu \
+        vim
 
 WORKDIR /mnt
