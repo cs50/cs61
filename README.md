@@ -37,6 +37,14 @@ docker start NAME
 docker attach NAME
 ```
 
+## Remove Persistent Container
+
+*This will delete the container's contents.*
+
+```
+docker rm NAME
+```
+
 ## Update Image (for new containers)
 
 ```
