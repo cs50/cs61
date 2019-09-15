@@ -50,5 +50,3 @@ docker rm NAME
 ```
 docker pull cs61/f19
 ```
-
-1. `docker run -it -P --rm -v "$(PWD)":/mnt cs61/f19` to start container and mount `$PWD` at `/mnt`
