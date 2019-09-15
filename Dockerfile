@@ -11,6 +11,12 @@ RUN apt-get update && \
         kcachegrind \
         linux-tools-generic \
         qemu \
+        sudo \
         vim
 
+RUN adduser --disabled-password --gecos "" --no-create-home ubuntu && \
+    echo "ubuntu ALL=(ALL:ALL) NOPASSWD: ALL" > /etc/sudoers.d/ubuntu && \
+    chmod 440 /etc/sudoers.d/ubuntu
+
+USER ubuntu
 WORKDIR /mnt
